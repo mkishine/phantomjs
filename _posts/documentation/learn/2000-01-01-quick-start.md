@@ -114,7 +114,7 @@ Any console message from a web page, including from the code inside `evaluate()`
 ```javascript
 var page = require('webpage').create();
 page.onConsoleMessage = function(msg) {
-  console.log('Page title is ' + msg);
+  console.log('Page Logged ' + msg);
 };
 page.open(url, function(status) {
   page.evaluate(function() {
